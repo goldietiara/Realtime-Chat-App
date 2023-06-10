@@ -1,0 +1,5 @@
+npm create vite@latest
+
+disable the react strict mode on main.jsx, because it dosen't play well with websocket
+remove index.css 
+

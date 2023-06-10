@@ -1,0 +1,15 @@
+express        = http framework to run node servers
+cors           = to call any server on the internet (routing)
+axios          = to make api call to the chatengine.io
+nodemon        = to run the node.jd on development mode
+
+
+chatengine.io  = gives us a chat server that user can use (https://chatengine.io)
+
+=== DOCUMENTATION  
+1. Build a realtime chat app    https://blog.chatengine.io/fullstack-chat/nodejs-reactjs
+2. Rest API                     https://rest.chatengine.io
+
+
+
+
