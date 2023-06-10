@@ -4,3 +4,5 @@ disable the react strict mode on main.jsx, because it dosen't play well with web
 remove index.css 
 
 npm install axios to add api call, so when user complete the auth form they actually get log into our node.js server
+
+npm i react-chat-engine-advanced = pre-build component chat engine ui's
