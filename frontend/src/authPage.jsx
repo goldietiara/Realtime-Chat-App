@@ -1,8 +1,20 @@
+import axios from "axios";
+
 const AuthPage = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     const { value } = e.target[0];
-    props.onAuth({ username: value, secret: value });
+    //axios call
+    // a post request to our node.js server
+    axios
+      .post("http://localhost:3001/authenticate", { username: value })
+
+      // promise to call that on.auth callback with the response.data as our object
+      // and overwrite the secret with the value that we passed in
+
+      // .then(r => props.onAuth({ username: value, secret: value}))
+      .then((r) => props.onAuth({ ...r.data, secret: value }))
+      .catch((e) => console.log("error", e));
   };
 
   return (

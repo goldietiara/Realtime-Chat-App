@@ -3,3 +3,4 @@ npm create vite@latest
 disable the react strict mode on main.jsx, because it dosen't play well with websocket
 remove index.css 
 
+npm install axios to add api call, so when user complete the auth form they actually get log into our node.js server
